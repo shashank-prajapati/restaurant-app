@@ -1,0 +1,168 @@
+.column {
+  float: left;
+  height: 97vh;
+  overflow: hidden;
+  break-inside: avoid;
+}
+
+.left {
+  float: left;
+  width: 24%;
+  border-right: 3px solid black;
+  overflow-y: scroll;
+}
+.right {
+  float: left;
+  width: 75%;
+  overflow-y: scroll;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.heading {
+  text-align: center;
+}
+
+.column input {
+  border: none;
+  margin-left: 2%;
+  width: 60%;
+  font-size: 12px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 16px;
+}
+
+.column input:focus {
+  outline: none;
+}
+
+.card {
+  border: none;
+  margin-left: 2%;
+  width: 85%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  margin-top: 2vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-box {
+  width: 50%;
+  height: 75%;
+  background-color: #fefefe;
+  margin: 5% auto;
+  border: 1px solid #888;
+  border-radius: 10px;
+  display: flex;
+}
+
+.close {
+  color: #ffff;
+  float: right;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.table:hover {
+  cursor: pointer;
+}
+
+.modal-header {
+  color: white;
+  background-color: #3d4eae;
+  padding: 1.5vw;
+  font-size: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-table {
+  padding: 1.5vw;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.quantity:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px #3d4eae solid;
+}
+
+.quantity {
+  border: none;
+  border-bottom: black solid 1px;
+  width: 80%;
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 2em;
+}
+
+.del-btn {
+  width: 8%;
+}
+
+.del-btn:hover {
+  cursor: pointer;
+}
+
+.gen-bill {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gen-bill button {
+  background-color: #e7e7e7;
+  border: none;
+  color: black;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
